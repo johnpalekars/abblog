@@ -1,0 +1,42 @@
+ul.icons li{
+    display: inline-block;
+    padding: .675em .5em;
+}
+
+li{
+    font-weight: 400;
+    color: #454545;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: Cantarell,sans-serif
+}
+
+ul.icons{
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -.675em;
+}
+
+ul.icons li a img {
+    width: 5em;
+    height: 5em;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+ul.icons li a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 7em;
+    height: 7em;
+    border-radius: 100%;
+    border: solid 1px grey;
+    line-height: 6.75em;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}

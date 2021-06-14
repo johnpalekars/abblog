@@ -1,0 +1,28 @@
+.uk-margin{
+    padding-right: 40px;
+}
+
+.uk-navbar-nav>li.uk-active>a{
+
+    color: #333;
+
+}
+.uk-navbar-nav>li>a{
+
+    color: #999;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.uk-navbar-nav>li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 0 15px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-decoration: none;
+}
