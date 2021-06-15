@@ -2,9 +2,13 @@
     padding-right: 40px;
 }
 
-.uk-navbar-nav>li.uk-active>a{
 
-    color: #333;
+.uk-navbar-nav>li>a.uk-active{
+    color: rgb(27, 27, 27);
+}
+.uk-navbar-nav>li>a:active{
+
+    color: rgb(15, 13, 13);
 
 }
 .uk-navbar-nav>li>a{
