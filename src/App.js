@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './home/Home'
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Navbar from 'components/navbar/Navbar';
 import About from 'components/about/About';

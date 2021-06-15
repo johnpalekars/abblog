@@ -1,0 +1,36 @@
+/* div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+} */
+
+.iconReact{
+    width: 150px;
+    height: 100px;
+}
+
+.iconjs{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+.complogo{
+    margin-top: 70px;
+    border-bottom: 80px;
+    height: 110px;
+    width: 250px;
+}
+
+.uk-heading-bullet{
+    padding-left: 50px;
+}
+
+.infoed{
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+}

@@ -3,19 +3,14 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-      <div className="uk-section uk-section-primary uk-light uk-section-large">
+      <div className="uk-section uk-section-muted uk-section-large">
         <div className="uk-container">
-          <div className="uk-grid-match uk-child-width-1-3@m" data-uk-grid>
-            <div>
-              <h1 class="uk-heading-divider">About Me</h1>
-            </div>
-            <div>
-              <h1 class="uk-heading-divider">About Me</h1>
-            </div>
-            <div>
-              <h1 class="uk-heading-divider">About Me</h1>
-            </div>
-          </div>
+          <hr class="uk-divider-icon"></hr>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h5 class="uk-text-center uk-text-muted">Abhishek Palekar 2021</h5>
         </div>
       </div>
     );

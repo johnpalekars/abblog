@@ -58,9 +58,6 @@ import './Social.css'
              <h1 className="uk-text-center">johnpalekars@gmail.com</h1>
            </div>
          </div>
-         <section>
-           <div className="uk-container">hello</div>
-         </section>
        </>
      );
 }
