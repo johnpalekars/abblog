@@ -11,7 +11,7 @@ import './Social.css'
                <li>
                  <a
                    className="uk-link"
-                   href="https://www.linkedin.com/in/abhishek-palekar-738261107/"
+                   href="https://www.linkedin.com/in/johnpalekars/"
                  >
                    <img
                      className="contain"

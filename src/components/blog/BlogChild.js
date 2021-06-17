@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Portfolio = () => {
+const BlogChild = () => {
     return (
         <div>
+            Hello I am BlogChild
             
         </div>
     )
 }
 
-export default Portfolio;
+export default BlogChild

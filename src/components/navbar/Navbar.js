@@ -27,13 +27,8 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="uk-active" to="/portfolio">
-              Portfolio
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="uk-active" to="/contact">
-              Contact
+            <NavLink activeClassName="uk-active" to="/blog">
+              Resume
             </NavLink>
           </li>
         </ul>
