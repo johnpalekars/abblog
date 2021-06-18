@@ -23,9 +23,6 @@ function App() {
             <Route path="/blog">
               <Blog></Blog>
             </Route>
-            <Route path="/">
-            </Route>
-            
             <Redirect to="/home" />
             <Redirect from="/" to="/home" />
           </Switch>

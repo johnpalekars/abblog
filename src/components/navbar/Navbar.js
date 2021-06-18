@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="uk-navbar-container uk-margin uk-navbar">
       <div className="uk-navbar-right">
         <ul className="uk-navbar-nav">
-          <li >
+          <li>
             <NavLink exact activeClassName="uk-active" to="/home">
               Home
             </NavLink>
@@ -27,9 +27,10 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="uk-active" to="/blog">
+            <a href="https://drive.google.com/file/d/1E81toS_rHcBIsZ0Zsx6iASfVKohZwvmY/view?usp=sharing"
+            >
               Resume
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>

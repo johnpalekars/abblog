@@ -113,7 +113,7 @@ const Rest = () => {
           <hr />
 
           <div className="uk-container">
-            <div class="uk-heading-bullet uk-card-title">Class X</div>
+            <div className="uk-heading-bullet uk-card-title">Class X</div>
           </div>
         </div>
       </div>

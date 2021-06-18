@@ -30,7 +30,7 @@ const Blog = () => {
 
 
     const style = {
-        paddingLeft: '70px'
+        paddingLeft: '50px'
     }
     return (
       <Fragment>
