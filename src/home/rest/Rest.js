@@ -65,7 +65,7 @@ const Rest = () => {
               <div className="uk-card uk-card-default uk-card-hover">
                 <div className="uk-card-media-top">
                   <img
-                    className=""
+                    className="complogo"
                     src="https://download.logo.wine/logo/Capgemini/Capgemini-Logo.wine.png"
                     alt=""
                   />
@@ -82,10 +82,6 @@ const Rest = () => {
                     src="https://iarianatech.com/wp-content/uploads/2019/08/ariana-5.png"
                     alt=""
                   />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
                 </div>
                 <div className="uk-card-title">Devepement Intern</div>
                 <div className="uk-card-body">Iariana tech</div>
@@ -97,16 +93,16 @@ const Rest = () => {
           <h1 className="uk-heading-line uk-heading-medium">
             <span>Education</span>
           </h1>
-          <hr class="uk-divider-icon" />
+          <hr className="uk-divider-icon" />
 
           <div className="uk-container">
-            <div class="uk-heading-bullet uk-card-title">
+            <div className="uk-heading-bullet uk-card-title">
               BE In Computer Science
             </div>
-            </div>
+          </div>
           <hr />
           <div className="uk-container ">
-            <div class="uk-heading-bullet uk-card-title">
+            <div className="uk-heading-bullet uk-card-title">
               Diploma in Computer Science
             </div>
           </div>
