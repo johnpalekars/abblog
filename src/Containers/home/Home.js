@@ -1,6 +1,6 @@
 import React from 'react'
-import Heading from 'home/heading/Heading';
-import Social from 'home/social/Social';
+import Heading from './heading/Heading';
+import Social from './social/Social';
 import Rest from './rest/Rest';
 
 function Home() {
