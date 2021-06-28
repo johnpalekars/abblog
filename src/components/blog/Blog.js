@@ -1,65 +1,59 @@
-import React, { Fragment, useState } from 'react'
-import { Link,  } from 'react-router-dom';
-import ToggleMain from './react-learn/TogglePerson/ToggleMain'
-import BlogChild from './BlogChild';
-import BurgerApp from './react-learn/burgerApp/BurgerApp';
+import React, { Fragment, useState } from "react";
+import "./Blog.css"
+import ToggleMain from "./react-learn/TogglePerson/ToggleMain";
+import BlogChild from "./BlogChild";
+import BurgerApp from "./react-learn/burgerApp/BurgerApp";
+import {
+  Switch,
+  Route,
+  NavLink,
+  useRouteMatch
+} from "react-router-dom";
+
 
 
 const Blog = () => {
+  let { path, url } = useRouteMatch();
+  return (
+    <div className="uk-text-center" data-uk-grid>
+      <div className="uk-width-1-5">
+        <ul className="ul">
+          <li className="sideLink">
+            <NavLink activeClassName="active" to={`${url}/blog`}>
+              Blog
+            </NavLink>
+          </li>
+          <li className="sideLink">
+            <NavLink activeClassName="active" to={`${url}/toggle`}>
+              Toggle Person
+            </NavLink>
+          </li>
+          <li className="sideLink">
+            <NavLink activeClassName="active"  to={`${url}/burger`}>
+              Burger App
+            </NavLink>
+          </li>
+        </ul>
+      </div>
 
-    let [state, setState] = useState({
-        comp: < BlogChild />
-    })
-
-
-
-    const tabChangeHandler = (value) => {
-
-        if (value === "blog") {
-          setState({
-            comp: <BlogChild />,
-          });
-        } else if (value === "toggle") {
-          setState({
-            comp: <ToggleMain />,
-          });
-        } else if (value === "burger") {
-          setState({
-            comp: <BurgerApp/>,
-          });
-        }
-        
-    }
-
-
-
-    const style = {
-        paddingLeft: '50px'
-    }
-    return (
-      <Fragment>
-        <div className="uk-text-center" data-uk-grid>
-          <div style={style} className="uk-width-1-4">
-            <ul className="uk-tab-left" data-uk-tab>
-              <li className="uk-active">
-                <Link to="" onClick={() => tabChangeHandler("blog")}>Blog</Link>
-              </li>
-              <li>
-                <Link to="" onClick={() => tabChangeHandler("toggle")}>
-                  Toggle Person
-                </Link>
-              </li>
-              <li>
-                <Link to="" onClick={() => tabChangeHandler("burger")}>
-                  Burger App
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="uk-width-3-4">{state.comp}</div>
+      <Switch>
+        <div style={{paddingRight:"20px"}} className="uk-width-4-5">
+          <Route exact path={path}>
+            <BlogChild />
+          </Route>
+          <Route path={`${path}/blog`}>
+            <BlogChild />
+          </Route>
+          <Route path={`${path}/toggle`}>
+            <ToggleMain />
+          </Route>
+          <Route path={`${path}/burger`}>
+            <BurgerApp />
+          </Route>
         </div>
-      </Fragment>
-    );
-}
+      </Switch>
+    </div>
+  );
+};
 
 export default Blog;
