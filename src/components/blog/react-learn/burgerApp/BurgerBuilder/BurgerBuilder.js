@@ -2,6 +2,7 @@ import React, { Fragment, Component } from "react";
 import Burger from "../Burger/Burger";
 import "./BurgerBuilder.css";
 import BuildControls from "../BuildControls/BuildControls";
+import instance from "../../../../../axios";
 
 const INGREDIENT_PRICE = {
   salad: 30,
@@ -25,6 +26,29 @@ class BurgerBuilder extends Component {
     totalPrice: 100,
     purchasable: false,
   };
+
+
+  purchaseContinueHandler = () => {
+    console.log("purchasecontinue")
+    const order = {
+      ...this.state.ingredients,
+      customer: 3,
+      price: this.state.totalPrice,
+      deliverymethod: "fastest",
+    };
+
+    instance
+      .post("api/order/",order)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+
+    
+  }
 
 
   updatePurchaseState = (updatedIngredients) => {
@@ -90,6 +114,7 @@ class BurgerBuilder extends Component {
         </div>
 
         <BuildControls
+          continue={this.purchaseContinueHandler}
           addIngredient={this.addIngredientHandler}
           removeIngredient={this.removeIngredientHandler}
           disabled={disabledInfo}
@@ -97,7 +122,6 @@ class BurgerBuilder extends Component {
           price={this.state.totalPrice}
           ingredients={this.state.ingredients}
           state={this.state}
-                
         />
       </Fragment>
     );

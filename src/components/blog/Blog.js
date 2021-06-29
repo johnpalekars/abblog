@@ -29,29 +29,30 @@ const Blog = () => {
             </NavLink>
           </li>
           <li className="sideLink">
-            <NavLink activeClassName="active"  to={`${url}/burger`}>
+            <NavLink activeClassName="active" to={`${url}/burger`}>
               Burger App
             </NavLink>
           </li>
         </ul>
       </div>
-
-      <Switch>
-        <div style={{paddingRight:"20px"}} className="uk-width-4-5">
-          <Route exact path={path}>
-            <BlogChild />
-          </Route>
-          <Route path={`${path}/blog`}>
-            <BlogChild />
-          </Route>
-          <Route path={`${path}/toggle`}>
-            <ToggleMain />
-          </Route>
-          <Route path={`${path}/burger`}>
-            <BurgerApp />
-          </Route>
-        </div>
-      </Switch>
+      <div style={{ paddingRight: "20px" }} className="uk-width-4-5">
+        <Switch>
+          <Fragment>
+            <Route exact path={path}>
+              <BlogChild />
+            </Route>
+            <Route path={`${path}/blog`}>
+              <BlogChild />
+            </Route>
+            <Route path={`${path}/toggle`}>
+              <ToggleMain />
+            </Route>
+            <Route path={`${path}/burger`}>
+              <BurgerApp />
+            </Route>
+          </Fragment>
+        </Switch>
+      </div>
     </div>
   );
 };
