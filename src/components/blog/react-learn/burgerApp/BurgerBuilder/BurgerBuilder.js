@@ -32,7 +32,7 @@ class BurgerBuilder extends Component {
     console.log("purchasecontinue")
     const order = {
       ...this.state.ingredients,
-      customer: 3,
+      customer: 2,
       price: this.state.totalPrice,
       deliverymethod: "fastest",
     };
