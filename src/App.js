@@ -5,7 +5,7 @@ import {React, Fragment} from "react"
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Navbar from 'components/navbar/Navbar';
 import About from 'components/about/About';
-import Blog from 'components/blog/Blog';
+import AppList from './components/App/AppList'
 import Footer from 'components/footer/Footer';
 
 const App= () => {
@@ -20,8 +20,8 @@ const App= () => {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/blog">
-              <Blog/>
+            <Route path="/app">
+              <AppList/>
             </Route>
             <Redirect to="/home" />
             <Redirect from="/" to="/home" />

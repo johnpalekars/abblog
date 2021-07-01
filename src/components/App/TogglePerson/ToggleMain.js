@@ -1,5 +1,6 @@
 import React,{ useState } from 'react'
 import Person from './Person/Person';
+import { useHistory } from "react-router-dom";
 
 
 const ToggleMain = () => {
@@ -73,19 +74,28 @@ const ToggleMain = () => {
   }
 
     
-
+let history = useHistory();
 
 
   return (
-    <div>
-      <button
-        className="uk-button uk-button-default uk-button-large"
-        onClick={toggleHandler}
-      >
-        Toggle
-      </button>
+    <div style={{ padding: "20px" }}>
+      <div className="uk-text-center">
+        <button
+          className=" uk-button uk-button-danger uk-button-large"
+          onClick={() => history.goBack()}
+        >
+          Back
+        </button>
+        <span>&nbsp;&nbsp;</span>
+        <button
+          className=" uk-button uk-button-primary uk-button-large"
+          onClick={toggleHandler}
+        >
+          Toggle
+        </button>
+      </div>
       <br />
-        {personData}
+      <div>{personData}</div>
     </div>
   );
 }

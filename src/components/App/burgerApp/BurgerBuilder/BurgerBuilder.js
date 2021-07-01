@@ -2,7 +2,7 @@ import React, { Fragment, Component } from "react";
 import Burger from "../Burger/Burger";
 import "./BurgerBuilder.css";
 import BuildControls from "../BuildControls/BuildControls";
-import instance from "../../../../../axios";
+import instance from "../../../../axios";
 
 const INGREDIENT_PRICE = {
   salad: 30,
